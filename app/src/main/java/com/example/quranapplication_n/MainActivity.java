@@ -40,4 +40,18 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        git.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String url = "";
+
+                Uri webpage = Uri.parse(url);
+                Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
+
+                startActivity(intent);
+            }
+        });
+
+
+    }
 }
