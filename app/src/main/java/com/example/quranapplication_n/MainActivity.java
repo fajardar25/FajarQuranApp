@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         git.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String url = "";
+                String url = "https://github.com/fajardar25/FajarQuranApp.git";
 
                 Uri webpage = Uri.parse(url);
                 Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
