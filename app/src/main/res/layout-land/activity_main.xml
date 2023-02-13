@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="7dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="@+id/ayatText"
+        app:layout_constraintTop_toBottomOf="@+id/ayatText" />
+
+    <EditText
+        android:id="@+id/displayWindow"
+        android:layout_width="0dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="117dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ayatText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/parahText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="36dp"
+        android:ems="10"
+        android:hint="Parah Number"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/displayWindow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ayatText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="88dp"
+        android:ems="10"
+        android:hint="Ayat number"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonGit2"
+        app:layout_constraintEnd_toStartOf="@+id/displayWindow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/displayWindow" />
+
+    <Button
+        android:id="@+id/buttonGit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="84dp"
+        android:text="GitHub"
+        app:layout_constraintEnd_toEndOf="@+id/displayWindow"
+        app:layout_constraintTop_toBottomOf="@+id/displayWindow" />
+</androidx.constraintlayout.widget.ConstraintLayout>
