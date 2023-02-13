@@ -11,5 +11,9 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    
+    TextView pText;
+    TextView aText;
+    Button search;
+    TextView display;
+    Button git;
 }
